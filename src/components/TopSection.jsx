@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from "./TopSection.module.css";
+import styles from "../style/TopSection.module.css";
 
 const TopSection = () => {
   const backgroundImageStyle = {
