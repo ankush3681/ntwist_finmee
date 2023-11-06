@@ -1,3 +1,8 @@
-.button{
-    
-}
+.button {
+    background-color: #ff3a2d;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }

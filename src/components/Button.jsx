@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import style from "../style/Button.module.css";
 
 const Button = () => {
   return (
