@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    font-family: sans-serif;
+    padding: 0;
+  }
+  
+  .navbar {
+    width: 100%;
+    height: 60px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+      rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5px;
+    background-color: rgb(221, 222, 222);
+  }
+  
+  .navLogo {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    text-align: start;
+    padding-left: 1rem;
+    /* border:1px solid red; */
+    
+  }
+
+  .navLogo div{
+    width:50%;
+    /* border:1px solid blue; */
+  }
+  
+  
+  .navLogo > img {
+    height: 90%;
+  }
+  
+  .midNavSection {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    border:1px solid red;
+  }
+  
+  .navLink {
+    text-decoration: none;
+    font-size: medium;
+    color:#003358;
+    font-weight: bold;
+  }
+  
+  /* .endNavSection {
+    width: 25%; */
+    /* border:1px solid blue; */
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+  } */
+  
+  .navLogin {
+    text-decoration: none;
+    font-size: large;
+    font-weight: bold;
+  }
+  
+  .burgerMenu {
+    display: none;
+  }
+  
+  .burgerIcon {
+    font-size: xx-large;
+  }
+  
+  .dropdownNavMenu{
+      display: none;
+  }
+  
+  
+  
+  @media (max-width: 800px) {
+  
+      .midNavSection{
+          display: none;
+      }
+  
+    .dropdownNavMenu {
+      display: flex;
+      flex-direction: column;
+      /* align-items: center; */
+      line-height: 2rem;
+      position: fixed;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      /* margin-top: 50px; */
+      height: 100vh;
+      background-color: white;
+    }
+  
+    /* .dropdown-nav-menu{
+      display: none;
+    } */
+    
+    .navLink {
+      display: block;
+      width: 100%;
+      text-align: center;
+      border-bottom: 1px solid #003358;
+      color:#003358;
+      padding:.5rem 0;
+    }
+  
+    .navLogin {
+      display: none;
+    }
+  
+    .burgerMenu {
+      display: block;
+      padding:.5rem 1rem;
+    }
+  
+    .navbar {
+      height: 50px;
+      transition: all 0.3s ease;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .navbar {
+      height: 40px;
+    }
+  }
+  
